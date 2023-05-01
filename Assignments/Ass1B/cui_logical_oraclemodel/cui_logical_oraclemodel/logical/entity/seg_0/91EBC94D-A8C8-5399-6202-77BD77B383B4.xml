@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91EBC94D-A8C8-5399-6202-77BD77B383B4" name="PROPERTY_BIN">
+<createdBy>zip</createdBy>
+<createdTime>2023-05-01 09:25:57 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prop_bin_rfid_tag" id="6727D559-DE05-E9BC-F4BC-C6AA4A84FA72">
+<createdBy>zip</createdBy>
+<createdTime>2023-05-01 09:26:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RFID tag of the property bin]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_bin_supply_date" id="C8BEB922-89FA-B785-C28E-ECEB729CC275">
+<createdBy>zip</createdBy>
+<createdTime>2023-05-01 09:27:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date the property bin was supplied]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_bin_replace_reason" id="55D5D125-81FD-7E0F-EDD8-0FFF3DF267E8">
+<createdBy>zip</createdBy>
+<createdTime>2023-05-01 09:27:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reason this property bin was replaced, if any]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>33 CHAR</dataTypeSize>
+<ownDataTypeParameters>33 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F84E3BDA-7E75-F2E3-A1C3-3760ED0CCAAB" name="PROPERTY_BIN PK">
+<createdBy>zip</createdBy>
+<createdTime>2023-05-01 09:26:54 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6727D559-DE05-E9BC-F4BC-C6AA4A84FA72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

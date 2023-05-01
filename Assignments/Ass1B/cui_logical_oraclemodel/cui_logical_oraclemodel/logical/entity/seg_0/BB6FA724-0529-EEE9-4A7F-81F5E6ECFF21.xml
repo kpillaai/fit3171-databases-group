@@ -42,7 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="waste_type_id" id="0F6D4220-DB79-72E0-E4D3-8461083FA760">
 <createdBy>Peter</createdBy>
@@ -58,7 +58,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="truck_vin" id="AFAAF00C-D1E5-51E7-20EB-2AD807A6F96B">
 <createdBy>Peter</createdBy>
@@ -77,7 +77,7 @@ VINs are usually 11-17 characters long. I could have done 17 but wanted to make 
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="driver_no" id="F1BE3202-8A75-87BE-FA19-8AA374429E42">
 <createdBy>Peter</createdBy>
@@ -95,7 +95,7 @@ potential for 99,999  drivers in CUI]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
