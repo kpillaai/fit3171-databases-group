@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E44DBBC-65D9-0B4C-48D5-3AE2EA014734" name="TRUCK_AUTH">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:03:56 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="truck_vin" id="E28F36A1-6D73-511B-B801-07AE27D8BA00">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:04:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Represents the Truck Vehicle Idendification Number
+
+
+VINs are usually 11-17 characters long. I could have done 17 but wanted to make some buffer space.]]></commentInRDBMS>
+<generatorID>237E8174-D472-4CE4-EFA3-B9DF13D14FE9</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>0354F02E-505F-C8FA-9E9F-4048379665EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_no" id="822D62FF-7737-B49A-1856-1FEBC80F281B">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:05:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for driver number
+
+potential for 99,999  drivers in CUI]]></commentInRDBMS>
+<generatorID>7AC01A76-4852-A74A-6DCB-BB8672D76749</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>F137FA36-9D45-BB74-1958-A75411C433AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99D92BC1-4A2A-9AFE-D9D8-0F7F89601DB3" name="TRUCK_AUTH PK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:05:06 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E28F36A1-6D73-511B-B801-07AE27D8BA00</attributeRef>
+<attributeRef>822D62FF-7737-B49A-1856-1FEBC80F281B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

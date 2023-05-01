@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="truck_truck_auth" directorySegmentName="seg_0" id="237E8174-D472-4CE4-EFA3-B9DF13D14FE9">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:04:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[relationship between truck and truck_auth]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>C292CDBE-8DA8-8E88-1851-D25DAA1183DC</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>authorised_by</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9495AD7E-0070-0338-C082-3FEF78E5936C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8E44DBBC-65D9-0B4C-48D5-3AE2EA014734</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
