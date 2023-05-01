@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="truck_day_report" directorySegmentName="seg_0" id="F65569AC-D65D-0E3E-40CF-0285750A7F08">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:16:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[relationship between truck and day_report]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>C292CDBE-8DA8-8E88-1851-D25DAA1183DC</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>records</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9495AD7E-0070-0338-C082-3FEF78E5936C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB6FA724-0529-EEE9-4A7F-81F5E6ECFF21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

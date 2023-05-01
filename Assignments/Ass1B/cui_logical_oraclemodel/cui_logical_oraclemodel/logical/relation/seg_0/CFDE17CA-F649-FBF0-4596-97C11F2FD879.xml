@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="waste_coll_day_rep" directorySegmentName="seg_0" id="CFDE17CA-F649-FBF0-4596-97C11F2FD879">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:13:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[relationship between waste_collection and day_report]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>03E4A0C3-A53E-668F-B92B-D42260CF41A9</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>reports</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>070B8421-657E-2287-B0B1-24A3E35A2610</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB6FA724-0529-EEE9-4A7F-81F5E6ECFF21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

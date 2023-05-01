@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver_day_report" directorySegmentName="seg_0" id="87CE76AD-DF42-8CDA-762B-54DEFB2F06C6">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:18:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[relationship between driver and day report]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>D95D2D77-086A-492C-97B2-D6D6443EDC07</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>records</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0C12DA91-BDA8-3604-4FE0-806CF0742AC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB6FA724-0529-EEE9-4A7F-81F5E6ECFF21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

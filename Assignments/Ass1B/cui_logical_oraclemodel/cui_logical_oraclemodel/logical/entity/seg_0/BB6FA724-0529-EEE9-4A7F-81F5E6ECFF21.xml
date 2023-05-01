@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB6FA724-0529-EEE9-4A7F-81F5E6ECFF21" name="DAY_REPORT">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:11:52 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="coll_date" id="92D3C656-CB53-034E-B109-A5EFC3EE774A">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:12:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for the collection date]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_id" id="8B22AA60-9767-B8ED-2007-F441056A6A72">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:13:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<generatorID>CFDE17CA-F649-FBF0-4596-97C11F2FD879</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>42C5B474-BED3-1ACC-18DC-9D5F49D8ABE7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="0F6D4220-DB79-72E0-E4D3-8461083FA760">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:13:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
+<generatorID>CFDE17CA-F649-FBF0-4596-97C11F2FD879</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>2DE676BA-4A4B-CDD4-A0A0-EEFE8F508767</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_vin" id="AFAAF00C-D1E5-51E7-20EB-2AD807A6F96B">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:16:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Represents the Truck Vehicle Idendification Number
+
+
+VINs are usually 11-17 characters long. I could have done 17 but wanted to make some buffer space.]]></commentInRDBMS>
+<generatorID>F65569AC-D65D-0E3E-40CF-0285750A7F08</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>0354F02E-505F-C8FA-9E9F-4048379665EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_no" id="F1BE3202-8A75-87BE-FA19-8AA374429E42">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:18:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for driver number
+
+potential for 99,999  drivers in CUI]]></commentInRDBMS>
+<generatorID>87CE76AD-DF42-8CDA-762B-54DEFB2F06C6</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>F137FA36-9D45-BB74-1958-A75411C433AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="642E9AEB-87BB-755A-0C82-0F5613B995EB" name="DAY_REPORT PK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 08:12:49 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92D3C656-CB53-034E-B109-A5EFC3EE774A</attributeRef>
+<attributeRef>8B22AA60-9767-B8ED-2007-F441056A6A72</attributeRef>
+<attributeRef>0F6D4220-DB79-72E0-E4D3-8461083FA760</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
