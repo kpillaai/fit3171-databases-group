@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C12DA91-BDA8-3604-4FE0-806CF0742AC4" name="DRIVER">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:44:27 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="driver_no" id="F137FA36-9D45-BB74-1958-A75411C433AF">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:44:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for driver number
+
+potential for 99,999  drivers in CUI]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_licence_no" id="D73E3B42-CCA3-A3C1-6DF5-35E9FE991A93">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:44:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for driver licence number]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_name" id="56B7B36A-1D51-D88D-60AF-2BFEC05DC1BA">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:47:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for the driver's name]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_dob" id="6D3130A0-3CB7-92F7-B91F-CF4F870C3D4B">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:48:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for the driver's date of birth]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_tfn" id="C201DAC1-50DA-1D68-D91A-3C1055391350">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:48:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for the driver's tfn]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_phone" id="8DD877F3-3DB5-C231-3F27-72C4EDB43285">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute for driver phone
+
+example had 10 digits BUT
+
+country code drops 1 and adds 2 (potentially 3)]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D95D2D77-086A-492C-97B2-D6D6443EDC07" name="DRIVER PK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:44:49 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F137FA36-9D45-BB74-1958-A75411C433AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

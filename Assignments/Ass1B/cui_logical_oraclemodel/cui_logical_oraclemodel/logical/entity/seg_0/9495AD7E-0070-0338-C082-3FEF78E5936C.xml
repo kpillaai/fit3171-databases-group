@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9495AD7E-0070-0338-C082-3FEF78E5936C" name="TRUCK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:25:32 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="truck_vin" id="0354F02E-505F-C8FA-9E9F-4048379665EE">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:25:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Represents the Truck Vehicle Idendification Number
+
+
+VINs are usually 11-17 characters long. I could have done 17 but wanted to make some buffer space.]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_rego" id="7BA6B782-5CC7-ECC0-8909-51060D635797">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:28:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute to represent the registration number of a truck
+
+Chose Char(10) as registration numbers are about 9 long in the form, but I wanted some buffer.]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_make" id="9FB1621B-F963-25E1-899F-28BD0AE3FDA0">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:30:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute to represent truck make]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_model" id="B0FABA05-8DAD-3128-E501-5852944BE3FF">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:38:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute to represent truck_model]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_year" id="6C3D4BBF-B0E8-1E39-5576-4D618F7E5BBF">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:32:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute to represent the truck year
+
+Date or char(4), I can't remember, probably date]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C292CDBE-8DA8-8E88-1851-D25DAA1183DC" name="TRUCK PK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-01 07:39:32 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0354F02E-505F-C8FA-9E9F-4048379665EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
