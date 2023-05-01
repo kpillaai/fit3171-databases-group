@@ -38,17 +38,16 @@
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
-<constraintName>check_coll_freq</constraintName>
+<constraintName>chk_coll_freq</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <listOfValues>
-<valueDef value="Fortnightly" description="Fortnightly collection"/>
-<valueDef value="Monthly" description="Monthly collection"/>
-<valueDef value="Weekly" description="Weekly collection"/>
+<valueDef value="F" description="Fortnightly collection"/>
+<valueDef value="M" description="Monthly collection"/>
+<valueDef value="W" description="Weekly collection"/>
 </listOfValues>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="contract_id" id="42C5B474-BED3-1ACC-18DC-9D5F49D8ABE7">
 <createdBy>61416</createdBy>

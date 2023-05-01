@@ -25,9 +25,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>16 CHAR</dataTypeSize>
-<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="prop_bin_supply_date" id="C8BEB922-89FA-B785-C28E-ECEB729CC275">
 <createdBy>zip</createdBy>
@@ -50,11 +50,18 @@
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
+<constraintName>chk_prob_bin_replace_reason</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>33 CHAR</dataTypeSize>
-<ownDataTypeParameters>33 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="BF" description="Bin Failure (fair use eg. old age)"/>
+<valueDef value="DO" description="Damaged by owner"/>
+<valueDef value="DW" description="Damaged during pickup of waste"/>
+<valueDef value="ST" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

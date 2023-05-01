@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="waste_type_id" id="B7496E4F-E407-AE7D-5B6C-49DF0C746BE9">
 <createdBy>zip</createdBy>
@@ -45,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="coll_date" id="2A7FBFE2-B24C-9FCD-4B18-2D018D597A79">
 <createdBy>zip</createdBy>
@@ -74,9 +74,9 @@
 <referedAttribute>6727D559-DE05-E9BC-F4BC-C6AA4A84FA72</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>16 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="coll_weight" id="768C0BC5-BD89-1E5E-0813-10A0F3B25302">
 <createdBy>zip</createdBy>
