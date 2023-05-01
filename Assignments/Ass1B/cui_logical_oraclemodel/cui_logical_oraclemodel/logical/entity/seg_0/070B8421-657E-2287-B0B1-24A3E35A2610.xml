@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="070B8421-657E-2287-B0B1-24A3E35A2610" name="WASTE_COLLECTION">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 01:52:21 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="waste_collection_cost_per_kg" id="30A1FCB8-8801-89B9-0F61-4BA3109BF6A1">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 01:52:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection cost per kg for waste types]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coll_freq" id="5FCB7D9A-80CF-BFC1-5AB1-65F08372EBAD">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 01:53:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection frequency]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<constraintName>check_coll_freq</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<listOfValues>
+<valueDef value="Fortnightly" description="Fortnightly collection"/>
+<valueDef value="Monthly" description="Monthly collection"/>
+<valueDef value="Weekly" description="Weekly collection"/>
+</listOfValues>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_id" id="42C5B474-BED3-1ACC-18DC-9D5F49D8ABE7">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:10:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<generatorID>816C7A81-1824-A733-C623-827AC8F1B566</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>354C6F97-277F-0BC7-6CBA-6CC84586189A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="2DE676BA-4A4B-CDD4-A0A0-EEFE8F508767">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:11:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
+<generatorID>05B7629D-6245-B17A-8691-26A48B615EA0</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>A8CEA456-56A0-8D92-1AA8-E55C830F6F0C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03E4A0C3-A53E-668F-B92B-D42260CF41A9" name="WASTE_COLLECTION PK">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:10:22 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>42C5B474-BED3-1ACC-18DC-9D5F49D8ABE7</attributeRef>
+<attributeRef>2DE676BA-4A4B-CDD4-A0A0-EEFE8F508767</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
