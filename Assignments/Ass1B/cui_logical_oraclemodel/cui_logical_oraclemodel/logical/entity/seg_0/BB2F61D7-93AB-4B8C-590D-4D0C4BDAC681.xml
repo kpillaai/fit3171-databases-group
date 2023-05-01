@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="789A1925-9100-EDFE-A092-8F891EF31418" name="CONTRACT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB2F61D7-93AB-4B8C-590D-4D0C4BDAC681" name="BIN_SUPPLY">
 <createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:10:23 UTC</createdTime>
+<createdTime>2023-05-01 02:27:21 UTC</createdTime>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
@@ -15,74 +15,82 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="contract_id" id="354C6F97-277F-0BC7-6CBA-6CC84586189A">
+<Attribute name="bin_supply_cost" id="B51D1D3F-54A7-BD10-FE9A-68B0BAB633BF">
 <createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:10:30 UTC</createdTime>
+<createdTime>2023-05-01 02:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Supply cost of a bin]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_id" id="9DCBA9D3-DD82-83C7-6F96-8234897660CD">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:29:33 UTC</createdTime>
 <commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<generatorID>F7595B0F-1A6D-6408-7841-30DE9A29C4D7</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
+<referedAttribute>354C6F97-277F-0BC7-6CBA-6CC84586189A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="contract_start_date" id="7696BFAC-0452-3F52-3A1F-B6F2D9B26A8E">
-<createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:11:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract start date]]></commentInRDBMS>
-<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="contract_end_date" id="FBEDAFE5-9E40-E7CD-CB72-8154797261A6">
+<Attribute name="bin_size" id="63C2F011-205C-F89C-A4CD-CA96D12A2BAA">
 <createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:11:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract end date]]></commentInRDBMS>
+<createdTime>2023-05-01 02:29:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Size of the bin in litres]]></commentInRDBMS>
+<generatorID>3ABF9146-854D-5378-AE14-691C0402F40F</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
+<referedAttribute>A5009F96-063F-CDEA-4A82-42000B3E4FE9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="auth_name" id="E1DF5EEE-578A-FDB7-D912-AA8D387CD5D1">
+<Attribute name="waste_type_id" id="167FA28B-34DE-6D93-277A-A59EE6D8DAA2">
 <createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:16:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Local Authority's name]]></commentInRDBMS>
-<generatorID>49307BA7-A7A6-CDBE-3CBA-C56D2109F31D</generatorID>
+<createdTime>2023-05-01 02:29:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
+<generatorID>3ABF9146-854D-5378-AE14-691C0402F40F</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
-<referedAttribute>1B6C7E20-6F15-64CF-CB0F-B3C4ED8F37C5</referedAttribute>
+<referedAttribute>BD50777D-FFA9-3C2C-8B3B-DCD9E1F06512</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="BC9E830F-2DCE-C2CB-4543-EADCA9E88740" name="CONTRACT PK">
+<identifier id="9C48B97D-C0A2-032E-E6CF-26B94229CC1C" name="BIN_SUPPLY PK">
 <createdBy>61416</createdBy>
-<createdTime>2023-04-28 11:10:50 UTC</createdTime>
+<createdTime>2023-05-01 02:28:15 UTC</createdTime>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>354C6F97-277F-0BC7-6CBA-6CC84586189A</attributeRef>
+<attributeRef>9DCBA9D3-DD82-83C7-6F96-8234897660CD</attributeRef>
+<attributeRef>63C2F011-205C-F89C-A4CD-CA96D12A2BAA</attributeRef>
+<attributeRef>167FA28B-34DE-6D93-277A-A59EE6D8DAA2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

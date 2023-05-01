@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B207B3E9-B4D8-5758-B938-DEA46FE08EC7" name="BIN">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:22:37 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_size" id="A5009F96-063F-CDEA-4A82-42000B3E4FE9">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:22:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Size of the bin in litres]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_standard_cost" id="C8202DED-9F75-791E-761F-4F8E9F48865B">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:23:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Standard cost of a bin]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="BD50777D-FFA9-3C2C-8B3B-DCD9E1F06512">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:24:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
+<generatorID>AE65126C-A644-3B1C-12D2-55C484B47D09</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>A8CEA456-56A0-8D92-1AA8-E55C830F6F0C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="57617FBB-D144-19CC-F1E3-AFF9CC907E02" name="BIN PK">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:23:29 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A5009F96-063F-CDEA-4A82-42000B3E4FE9</attributeRef>
+<attributeRef>BD50777D-FFA9-3C2C-8B3B-DCD9E1F06512</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

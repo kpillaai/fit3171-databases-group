@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contract_bin_supply" directorySegmentName="seg_0" id="F7595B0F-1A6D-6408-7841-30DE9A29C4D7">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:29:33 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>BC9E830F-2DCE-C2CB-4543-EADCA9E88740</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>supplies (CHANGE)</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>789A1925-9100-EDFE-A092-8F891EF31418</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB2F61D7-93AB-4B8C-590D-4D0C4BDAC681</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
