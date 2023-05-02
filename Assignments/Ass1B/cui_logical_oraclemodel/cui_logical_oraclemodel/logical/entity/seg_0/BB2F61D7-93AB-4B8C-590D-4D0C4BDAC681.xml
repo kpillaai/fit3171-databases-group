@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_supply_no" id="E039579E-AF17-92B9-8851-B43D1A5C8947">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:47:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for bin supply]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="bin_supply_cost" id="B51D1D3F-54A7-BD10-FE9A-68B0BAB633BF">
 <createdBy>61416</createdBy>
 <createdTime>2023-05-01 02:27:33 UTC</createdTime>
@@ -43,7 +57,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="bin_size" id="63C2F011-205C-F89C-A4CD-CA96D12A2BAA">
 <createdBy>61416</createdBy>
@@ -59,7 +73,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="waste_type_id" id="167FA28B-34DE-6D93-277A-A59EE6D8DAA2">
 <createdBy>61416</createdBy>
@@ -75,7 +89,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -87,6 +101,18 @@
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>E039579E-AF17-92B9-8851-B43D1A5C8947</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BD6FFD7E-1A5C-ABB5-6F62-E23E5A31EA6A" name="BIN_SUPPLY_NK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:52:56 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<newElementsIDs>F7595B0F-1A6D-6408-7841-30DE9A29C4D7,3ABF9146-854D-5378-AE14-691C0402F40F</newElementsIDs>
 <usedAttributes>
 <attributeRef>9DCBA9D3-DD82-83C7-6F96-8234897660CD</attributeRef>
 <attributeRef>63C2F011-205C-F89C-A4CD-CA96D12A2BAA</attributeRef>

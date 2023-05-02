@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bin_bin_supply" directorySegmentName="seg_0" id="3ABF9146-854D-5378-AE14-691C0402F40F">
-<createdBy>61416</createdBy>
-<createdTime>2023-05-01 02:29:59 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="property_property_bin" directorySegmentName="seg_0" id="5D54ED95-95D0-1926-C3B1-877D66786C64">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 06:07:56 UTC</createdTime>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
-<sourcePk>57617FBB-D144-19CC-F1E3-AFF9CC907E02</sourcePk>
+<sourcePk>F6E8686A-F64B-B7BA-91B2-7FD15D46C149</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>supplies</nameOnSource>
+<nameOnSource>is assigned</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>B207B3E9-B4D8-5758-B938-DEA46FE08EC7</sourceEntity>
+<sourceEntity>CDD2762B-0AD5-15EE-B6C0-EB1F1BDDC28A</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>BB2F61D7-93AB-4B8C-590D-4D0C4BDAC681</targetEntity>
+<targetEntity>91EBC94D-A8C8-5399-6202-77BD77B383B4</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDD2762B-0AD5-15EE-B6C0-EB1F1BDDC28A" name="PROPERTY">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:41:37 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="property_no" id="869DA21B-02E4-C43A-9C8E-0CCE3CC155BC">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:42:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for property number]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_street_number" id="EF2376AC-B3B8-E1EA-436A-30A797A4799C">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:41:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street number for the property
+
+10 characters of space given the nature of some street numbers]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="9330FF4B-C8B9-6896-833D-98B2C5E5C1FD">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:43:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>06AB743F-E23D-EF3F-49CC-A612876AFD27</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>13908A9B-FAA5-E90D-81B2-8B2055A5480B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_name" id="6F93635A-2BBF-A34E-2C28-4F5593AFA5DB">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:43:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Local Authority's name]]></commentInRDBMS>
+<generatorID>06AB743F-E23D-EF3F-49CC-A612876AFD27</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>447987FD-FBB3-912E-3BFA-4FE746CA18CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6E8686A-F64B-B7BA-91B2-7FD15D46C149" name="PROPERTY PK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:42:29 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>869DA21B-02E4-C43A-9C8E-0CCE3CC155BC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F2052748-9DD5-0D60-CCD9-F6DE1F1C5766" name="PROPERTY_NK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:53:52 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<newElementsIDs>06AB743F-E23D-EF3F-49CC-A612876AFD27,EF2376AC-B3B8-E1EA-436A-30A797A4799C</newElementsIDs>
+<usedAttributes>
+<attributeRef>9330FF4B-C8B9-6896-833D-98B2C5E5C1FD</attributeRef>
+<attributeRef>6F93635A-2BBF-A34E-2C28-4F5593AFA5DB</attributeRef>
+<attributeRef>EF2376AC-B3B8-E1EA-436A-30A797A4799C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

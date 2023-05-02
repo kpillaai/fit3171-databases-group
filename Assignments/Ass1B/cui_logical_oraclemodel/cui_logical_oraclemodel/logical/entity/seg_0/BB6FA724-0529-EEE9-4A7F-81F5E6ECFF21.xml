@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="day_report_no" id="42FDA9E0-C27D-F184-D5CC-AABD2CFAE79A">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:28:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for the day_report]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="coll_date" id="92D3C656-CB53-034E-B109-A5EFC3EE774A">
 <createdBy>Peter</createdBy>
 <createdTime>2023-05-01 08:12:27 UTC</createdTime>
@@ -42,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="waste_type_id" id="0F6D4220-DB79-72E0-E4D3-8461083FA760">
 <createdBy>Peter</createdBy>
@@ -107,6 +121,18 @@ potential for 99,999  drivers in CUI]]></commentInRDBMS>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>42FDA9E0-C27D-F184-D5CC-AABD2CFAE79A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2B187D51-187B-08A2-0C56-AE18CEF287F0" name="DAY_REPORT_NK">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:30:35 UTC</createdTime>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<newElementsIDs>92D3C656-CB53-034E-B109-A5EFC3EE774A,CFDE17CA-F649-FBF0-4596-97C11F2FD879</newElementsIDs>
 <usedAttributes>
 <attributeRef>92D3C656-CB53-034E-B109-A5EFC3EE774A</attributeRef>
 <attributeRef>8B22AA60-9767-B8ED-2007-F441056A6A72</attributeRef>

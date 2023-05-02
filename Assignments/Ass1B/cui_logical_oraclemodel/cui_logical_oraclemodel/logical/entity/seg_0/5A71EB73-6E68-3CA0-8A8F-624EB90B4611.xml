@@ -15,53 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="contract_id" id="113EEF44-9A52-57B6-BD10-D05E94619A97">
-<createdBy>zip</createdBy>
-<createdTime>2023-05-01 09:49:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
-<generatorID>54595030-3AAB-13D4-D940-0E1B72AFDF6B</generatorID>
-<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
-</engineerTo>
-<referedAttribute>8B22AA60-9767-B8ED-2007-F441056A6A72</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="waste_type_id" id="B7496E4F-E407-AE7D-5B6C-49DF0C746BE9">
-<createdBy>zip</createdBy>
-<createdTime>2023-05-01 09:49:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
-<generatorID>54595030-3AAB-13D4-D940-0E1B72AFDF6B</generatorID>
-<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
-</engineerTo>
-<referedAttribute>0F6D4220-DB79-72E0-E4D3-8461083FA760</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="coll_date" id="2A7FBFE2-B24C-9FCD-4B18-2D018D597A79">
-<createdBy>zip</createdBy>
-<createdTime>2023-05-01 09:49:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[attribute for the collection date]]></commentInRDBMS>
-<generatorID>54595030-3AAB-13D4-D940-0E1B72AFDF6B</generatorID>
-<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
-</engineerTo>
-<referedAttribute>92D3C656-CB53-034E-B109-A5EFC3EE774A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="prop_bin_rfid_tag" id="CAA6433F-269A-9D0B-150A-9B7E1F4BB793">
 <createdBy>zip</createdBy>
 <createdTime>2023-05-01 09:48:51 UTC</createdTime>
@@ -113,6 +66,22 @@
 </listOfValues>
 <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="day_report_no" id="961C8C4B-1F60-7246-0397-71A4FFD32D3F">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:28:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for the day_report]]></commentInRDBMS>
+<generatorID>54595030-3AAB-13D4-D940-0E1B72AFDF6B</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>42FDA9E0-C27D-F184-D5CC-AABD2CFAE79A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EDDB45D8-6EC4-B2A1-F9AC-6A7F636778AB" name="BIN_COLLECTION PK">
@@ -125,9 +94,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>CAA6433F-269A-9D0B-150A-9B7E1F4BB793</attributeRef>
-<attributeRef>2A7FBFE2-B24C-9FCD-4B18-2D018D597A79</attributeRef>
-<attributeRef>113EEF44-9A52-57B6-BD10-D05E94619A97</attributeRef>
-<attributeRef>B7496E4F-E407-AE7D-5B6C-49DF0C746BE9</attributeRef>
+<attributeRef>961C8C4B-1F60-7246-0397-71A4FFD32D3F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

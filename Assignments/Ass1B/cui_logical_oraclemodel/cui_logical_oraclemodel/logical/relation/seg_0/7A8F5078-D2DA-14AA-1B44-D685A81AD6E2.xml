@@ -1,20 +1,22 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="owner_property" directorySegmentName="seg_0" id="B8818FB4-9567-1338-E376-4CA9F1A8EC92">
-<createdBy>61416</createdBy>
-<createdTime>2023-04-28 10:37:34 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="owner_title_deed" directorySegmentName="seg_0" id="7A8F5078-D2DA-14AA-1B44-D685A81AD6E2">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:45:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner_title_deed relationship]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
-<identifying>false</identifying>
+<sourcePk>22783C24-FE74-D601-7B6D-881326A4DDEA</sourcePk>
+<identifying>true</identifying>
 <nameOnSource>owns</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
-<sourceCardinality>*</sourceCardinality>
+<sourceCardinality>1</sourceCardinality>
 <sourceEntity>EDF32339-4D58-BE91-F8B7-74DDF73EDB62</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>869C4FE9-D91F-1527-DE52-E0265B0DFEDA</targetEntity>
+<targetEntity>EC2646E2-1033-AA14-7745-8CE5D11D73A5</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

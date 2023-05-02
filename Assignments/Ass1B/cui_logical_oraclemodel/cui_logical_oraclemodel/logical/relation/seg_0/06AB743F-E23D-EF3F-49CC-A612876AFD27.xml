@@ -1,21 +1,22 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="street_property" directorySegmentName="seg_0" id="58A4CA7A-05E9-4CEE-D492-9293EE301777">
-<createdBy>61416</createdBy>
-<createdTime>2023-04-28 10:29:40 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="street_property" directorySegmentName="seg_0" id="06AB743F-E23D-EF3F-49CC-A612876AFD27">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:43:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[street property relationship]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
 </engineerTo>
 <sourcePk>0DEF7004-7A2A-4187-BD7C-40B703BD27F4</sourcePk>
-<identifying>true</identifying>
-<nameOnSource>comprised_of</nameOnSource>
+<identifying>false</identifying>
+<nameOnSource>comprised of</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>8DAD3EB1-64CB-B9D3-C072-E9870630354A</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>869C4FE9-D91F-1527-DE52-E0265B0DFEDA</targetEntity>
+<targetEntity>CDD2762B-0AD5-15EE-B6C0-EB1F1BDDC28A</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

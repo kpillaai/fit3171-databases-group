@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="property_title_deed" directorySegmentName="seg_0" id="24CC9156-E140-90DB-D460-1DA362F2850E">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 05:46:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[property to title_deed relationship]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<sourcePk>F6E8686A-F64B-B7BA-91B2-7FD15D46C149</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>documents</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CDD2762B-0AD5-15EE-B6C0-EB1F1BDDC28A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EC2646E2-1033-AA14-7745-8CE5D11D73A5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

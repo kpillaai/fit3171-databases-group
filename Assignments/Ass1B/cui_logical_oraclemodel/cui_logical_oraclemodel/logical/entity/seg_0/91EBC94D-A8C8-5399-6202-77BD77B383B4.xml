@@ -63,6 +63,54 @@
 </listOfValues>
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="bin_size" id="B6FC7F8A-C829-9AA7-8F5C-8354D3231B89">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 06:07:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Size of the bin in litres]]></commentInRDBMS>
+<generatorID>B6EEAC38-625E-F43C-50E4-F90BCD5F143F</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>A5009F96-063F-CDEA-4A82-42000B3E4FE9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="47566FFF-EA37-3D74-A19D-290F56477C08">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 06:07:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste types' id]]></commentInRDBMS>
+<generatorID>B6EEAC38-625E-F43C-50E4-F90BCD5F143F</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>BD50777D-FFA9-3C2C-8B3B-DCD9E1F06512</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_no" id="E82AE5FB-961F-03BC-FA49-385C4432E67A">
+<createdBy>Peter</createdBy>
+<createdTime>2023-05-02 06:07:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for property number]]></commentInRDBMS>
+<generatorID>5D54ED95-95D0-1926-C3B1-877D66786C64</generatorID>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<referedAttribute>869DA21B-02E4-C43A-9C8E-0CCE3CC155BC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F84E3BDA-7E75-F2E3-A1C3-3760ED0CCAAB" name="PROPERTY_BIN PK">
