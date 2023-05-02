@@ -21,7 +21,7 @@
 <commentInRDBMS><![CDATA[Represents the Truck Vehicle Idendification Number
 
 
-VINs are usually 11-17 characters long. I could have done 17 but wanted to make some buffer space.]]></commentInRDBMS>
+VINs are17 characters long]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
@@ -29,8 +29,8 @@ VINs are usually 11-17 characters long. I could have done 17 but wanted to make 
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="truck_rego" id="7BA6B782-5CC7-ECC0-8909-51060D635797">
 <createdBy>Peter</createdBy>
@@ -73,8 +73,8 @@ Chose Char(10) as registration numbers are about 9 long in the form, but I wante
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="truck_year" id="6C3D4BBF-B0E8-1E39-5576-4D618F7E5BBF">
 <createdBy>Peter</createdBy>

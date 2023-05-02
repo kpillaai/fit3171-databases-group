@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="auth_name" id="447987FD-FBB3-912E-3BFA-4FE746CA18CD">
 <createdBy>61416</createdBy>
@@ -87,7 +87,7 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <listOfValues>
-<valueDef value="A" description="Concrete"/>
+<valueDef value="A" description="Asphalt"/>
 <valueDef value="C" description="Concrete"/>
 <valueDef value="U" description="Unsealed"/>
 </listOfValues>

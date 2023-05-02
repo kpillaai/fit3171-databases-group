@@ -46,7 +46,9 @@
 <Attribute name="contract_id" id="9DCBA9D3-DD82-83C7-6F96-8234897660CD">
 <createdBy>61416</createdBy>
 <createdTime>2023-05-01 02:29:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Contract ID
+
+potential for 999,999 contracts]]></commentInRDBMS>
 <generatorID>F7595B0F-1A6D-6408-7841-30DE9A29C4D7</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -56,7 +58,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
+<dataTypeSize>6</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="bin_size" id="63C2F011-205C-F89C-A4CD-CA96D12A2BAA">

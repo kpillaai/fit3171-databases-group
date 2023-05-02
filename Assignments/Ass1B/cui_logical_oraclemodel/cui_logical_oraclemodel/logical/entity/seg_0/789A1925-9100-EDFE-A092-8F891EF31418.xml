@@ -18,7 +18,9 @@
 <Attribute name="contract_id" id="354C6F97-277F-0BC7-6CBA-6CC84586189A">
 <createdBy>61416</createdBy>
 <createdTime>2023-04-28 11:10:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Contract ID
+
+potential for 999,999 contracts]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
@@ -26,8 +28,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="contract_start_date" id="7696BFAC-0452-3F52-3A1F-B6F2D9B26A8E">
 <createdBy>61416</createdBy>

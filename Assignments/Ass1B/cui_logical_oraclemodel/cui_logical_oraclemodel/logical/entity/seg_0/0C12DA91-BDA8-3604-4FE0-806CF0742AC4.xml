@@ -91,9 +91,7 @@ potential for 99,999  drivers in CUI]]></commentInRDBMS>
 <createdTime>2023-05-01 07:49:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[attribute for driver phone
 
-example had 10 digits BUT
-
-country code drops 1 and adds 2 (potentially 3)]]></commentInRDBMS>
+as per the example, 10 digits. Mobile number.]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
@@ -101,8 +99,7 @@ country code drops 1 and adds 2 (potentially 3)]]></commentInRDBMS>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>13</dataTypeSize>
-<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

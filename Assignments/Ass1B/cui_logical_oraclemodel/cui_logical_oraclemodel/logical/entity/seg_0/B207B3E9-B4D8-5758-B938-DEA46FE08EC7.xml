@@ -29,20 +29,6 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bin_standard_cost" id="C8202DED-9F75-791E-761F-4F8E9F48865B">
-<createdBy>61416</createdBy>
-<createdTime>2023-05-01 02:23:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Standard cost of a bin]]></commentInRDBMS>
-<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="waste_type_id" id="BD50777D-FFA9-3C2C-8B3B-DCD9E1F06512">
 <createdBy>61416</createdBy>
 <createdTime>2023-05-01 02:24:43 UTC</createdTime>
@@ -57,7 +43,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_standard_cost" id="C8202DED-9F75-791E-761F-4F8E9F48865B">
+<createdBy>61416</createdBy>
+<createdTime>2023-05-01 02:23:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Standard cost of a bin]]></commentInRDBMS>
+<ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

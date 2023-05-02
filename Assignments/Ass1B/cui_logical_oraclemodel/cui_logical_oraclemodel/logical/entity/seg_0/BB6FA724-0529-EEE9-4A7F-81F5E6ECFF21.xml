@@ -45,7 +45,9 @@
 <Attribute name="contract_id" id="8B22AA60-9767-B8ED-2007-F441056A6A72">
 <createdBy>Peter</createdBy>
 <createdTime>2023-05-01 08:13:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Contract ID]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Contract ID
+
+potential for 999,999 contracts]]></commentInRDBMS>
 <generatorID>CFDE17CA-F649-FBF0-4596-97C11F2FD879</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -72,7 +74,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="truck_vin" id="AFAAF00C-D1E5-51E7-20EB-2AD807A6F96B">
 <createdBy>Peter</createdBy>
@@ -80,7 +82,7 @@
 <commentInRDBMS><![CDATA[Represents the Truck Vehicle Idendification Number
 
 
-VINs are usually 11-17 characters long. I could have done 17 but wanted to make some buffer space.]]></commentInRDBMS>
+VINs are17 characters long]]></commentInRDBMS>
 <generatorID>F65569AC-D65D-0E3E-40CF-0285750A7F08</generatorID>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -90,8 +92,8 @@ VINs are usually 11-17 characters long. I could have done 17 but wanted to make 
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="driver_no" id="F1BE3202-8A75-87BE-FA19-8AA374429E42">
 <createdBy>Peter</createdBy>
@@ -109,7 +111,7 @@ potential for 99,999  drivers in CUI]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

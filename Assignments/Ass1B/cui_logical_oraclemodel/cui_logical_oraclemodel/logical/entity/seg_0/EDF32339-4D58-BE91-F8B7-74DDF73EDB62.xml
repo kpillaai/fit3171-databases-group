@@ -68,8 +68,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="owner_phone_num" id="D6C056AB-65E0-A92F-DAC3-FE61CA47F80E">
 <createdBy>61416</createdBy>

@@ -54,7 +54,9 @@
 <Attribute name="auth_phone_num" id="872D3338-3D1B-D0D2-C681-EA1417397F99">
 <createdBy>61416</createdBy>
 <createdTime>2023-04-28 09:38:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Local Authority phone number]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Local Authority phone number
+
+could be a landline, so varchar is needed]]></commentInRDBMS>
 <ownerDesignName>cui_logical_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F6288348-D55B-8D15-4997-CB2E3099372C" value="true"/>
